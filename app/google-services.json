@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "573501754280",
+    "project_id": "traviling-6dcf0",
+    "storage_bucket": "traviling-6dcf0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573501754280:android:2308db7ca2f04aa74feb9d",
+        "android_client_info": {
+          "package_name": "com.example.traviling"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARU1agmFWWzBE-KSvaqEWvnQHXmDx01VU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
