@@ -18,7 +18,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentReference;
 
 
-public class AddRestaurantFragment extends Fragment {
+    public class AddTravilingFragment extends Fragment {
 
     private FirebaseServices fbs;
     private EditText etName, etDescription, etAddress, etPhone;
@@ -31,10 +31,10 @@ public class AddRestaurantFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public AddRestaurantFragment() {
+    public AddTravilingFragment() {
     }
-    public static AddRestaurantFragment newInstance(String param1, String param2) {
-        AddRestaurantFragment fragment = new AddRestaurantFragment();
+    public static AddTravilingFragment newInstance(String param1, String param2) {
+        AddTravilingFragment fragment = new AddTravilingFragment();
         Bundle args = new Bundle();
         args.putString(ARG_P1, param1);
         args.putString(ARG_P2, param2);
@@ -67,11 +67,11 @@ public class AddRestaurantFragment extends Fragment {
 
     private void connectComponents() {
         fbs = FirebaseServices.getInstance();
-        etName = getView().findViewById(R.id.);
-        etDescription = getView().findViewById(R.id.);
-        etAddress = getView().findViewById(R.id.);
-        etPhone = getView().findViewById(R.id.);
-        btnAdd = getView().findViewById(R.id.);
+        etName = getView().findViewById(R.id.passwordlogin);
+        etDescription = getView().findViewById(R.id.loginbtn_signup);
+        etAddress = getView().findViewById(R.id.loginbtnn);
+        etPhone = getView().findViewById(R.id.passwordlogin);
+        btnAdd = getView().findViewById(R.id.passwordlogin);
 
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,18 +82,15 @@ public class AddRestaurantFragment extends Fragment {
                 String address = etAddress.getText().toString();
                 String phone = etPhone.getText().toString();
 
-                // data validation
                 if (name.trim().isEmpty() || description.trim().isEmpty() ||
-                        address.trim().isEmpty() || phone.trim().isEmpty())
-                {
+                        address.trim().isEmpty() || phone.trim().isEmpty()) {
                     Toast.makeText(getActivity(), "Some fields are empty!", Toast.LENGTH_LONG).show();
                     return;
                 }
 
-                // add data to firestore
-               Traviling = new Traviling(name, description, address, phone);
+                Traviling traviling= new Traviling(name, description, address, phone);
 
-                fbs.getFire().collection("restaurants").add(rest).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                fbs.getFire().collection("restaurants").add(fbs).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                     @Override
                     public void onSuccess(DocumentReference documentReference) {
                         Toast.makeText(getActivity(), "Successfully added your restaurant!", Toast.LENGTH_SHORT).show();
@@ -109,3 +106,4 @@ public class AddRestaurantFragment extends Fragment {
             }
         });
     }
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.signupbenefactorfragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/emailsignupbenefactor"
+            android:layout_width="235dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="276dp"
+            android:ems="10"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.055"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/passsignup"
+            android:layout_width="235dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="336dp"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="numberPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.054"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/confirmpasssignup"
+            android:layout_width="236dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="416dp"
+            android:ems="10"
+            android:hint="confirm password"
+            android:inputType="numberPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/loginbtn_signup"
+            android:layout_width="99dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginBottom="64dp"
+            android:backgroundTint="@color/blue"
+            android:text="login"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passsignup"
+            app:layout_constraintVertical_bias="0.322" />
+
+        <Button
+            android:id="@+id/finishsignup"
+            android:layout_width="112dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="84dp"
+            android:layout_marginBottom="308dp"
+            android:backgroundTint="@color/blue"
+            android:text="continue"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="435dp"
+            android:layout_height="257dp"
+            android:scaleType="fitXY"
+            android:src="@tools:sample/avatars"
+            tools:src="@drawable/_7bb9361_26c0_46c2_ae61_71e5b4bfd11c" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
