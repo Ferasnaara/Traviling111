@@ -3,86 +3,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragments.loginbenefactorfragment">
+    android:layout_height="300dp"
+    android:background="#3AA3A5"
+    android:padding="16dp"
+    tools:context=".fragments.loginbenefactorfragment" >
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:backgroundTint="@color/ofwhite">
+    <LinearLayout
+        android:layout_width="142dp"
+        android:layout_height="54dp"
+        android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/Emailtextlogin"
-            android:layout_width="215dp"
-            android:layout_height="55dp"
-            android:layout_marginTop="156dp"
-            android:ems="10"
-            android:hint="E-mail"
-            android:inputType="textEmailAddress"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.53"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-            android:id="@+id/passwordlogin"
-            android:layout_width="214dp"
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="86dp"
             android:layout_height="54dp"
-            android:layout_marginTop="272dp"
-            android:ems="10"
-            android:hint="password"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            android:inputType="numberPassword"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.527"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/loginbtnn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="9dp"
-            android:layout_marginBottom="150dp"
-            android:backgroundTint="@color/blue"
-            android:text="login"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            android:textStyle="bold"
-            app:iconTint="@color/blue"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/singupbtn"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/forgotpassbtn" />
-
-        <Button
-            android:id="@+id/singupbtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="28dp"
-            android:backgroundTint="@color/blue"
-            android:text="signup"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            app:layout_constraintBaseline_toBaselineOf="@+id/loginbtnn"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/loginbtnn" />
+            android:layout_weight="1"
+            android:src="@tools:sample/avatars"
+            tools:src="@drawable/blonde_woman_selfie_instagram_influencer" />
 
         <TextView
-            android:id="@+id/forgotpassbtn"
-            android:layout_width="149dp"
-            android:layout_height="34dp"
-            android:layout_marginStart="73dp"
-            android:layout_marginTop="444dp"
-            android:layout_marginBottom="62dp"
-            android:text="forgot password"
-            android:textColor="@color/teal_700"
-            android:textStyle="bold|italic"
-            app:layout_constraintBottom_toTopOf="@+id/loginbtnn"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:text="Welcome Back"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
 </FrameLayout>
