@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <FrameLayout
+        android:id="@+id/frameLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="731dp">
+
+    </FrameLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -25,31 +33,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="552dp"
                 android:scaleType="center"
-                android:src="@tools:sample/avatars"
-                tools:srcCompat="@drawable/travel_guard_1_thumb_800_480_png" />
+                tools:srcCompat="@drawable/travel_guard_1_thumb_800_480_png"/>
+
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
-                android:text="Let's enjoy the
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- beautiful world"
-                         android:textAlignment="center"
+                android:text="Let's enjoy the beautiful world"
+                android:textAlignment="center"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
@@ -60,14 +52,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Explore new places in the world and get new experiences"
-            android:textAlignment="center"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_margin="16dp"/>
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_margin="16dp"/>
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btnStartMain"
+                android:onClick="gotoSignupFragment"
                 android:layout_width="match_parent"
                 android:layout_height="62dp"
                 android:text="Let's Get Started"

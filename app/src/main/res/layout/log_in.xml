@@ -10,17 +10,18 @@
         android:layout_height="300dp"
         android:background="#3AA3A5"
         android:orientation="horizontal"
-        android:padding="16dp">
+        android:padding="16dp"
+        tools:ignore="MissingConstraints">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:ignore="ExtraText">
 
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="85dp"
                 android:layout_height="72dp"
-                android:src="@tools:sample/avatars"
                 tools:srcCompat="@drawable/blonde_woman_selfie_instagram_influencer" />
 
             <TextView
@@ -70,7 +71,8 @@
                 android:layout_width="373dp"
                 android:layout_height="50dp"
                 android:background="#FFFFFF"
-                tools:layout_editor_absoluteY="170dp" />
+                tools:layout_editor_absoluteY="170dp"
+                tools:ignore="MissingConstraints" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

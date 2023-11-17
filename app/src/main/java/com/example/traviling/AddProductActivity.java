@@ -30,7 +30,7 @@ import java.util.UUID;
 
 public class AddProductActivity extends AppCompatActivity {
     @SuppressLint("WrongViewCast")
-    private EditText Name, Brand, Info, Price = findViewById(R.id.singupbtn);
+    private EditText Name, Brand, Info, Price = findViewById(R.id.btnStartMain);
     private Button Add;
     private ImageButton ProductPicture;
     private FirebaseServices fbs;
@@ -82,9 +82,8 @@ public class AddProductActivity extends AppCompatActivity {
         }
         else
         {
-           Traviling traviling = new Traviling(Name, Info, Company, Price);
             fbs.getFire().collection("Products")
-                    .add(traviling)
+                    .add(TAG)
                     .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                         @Override
                         public void onSuccess(DocumentReference documentReference) {
@@ -134,9 +133,9 @@ public class AddProductActivity extends AppCompatActivity {
     @SuppressLint("WrongViewCast")
     public void ConnectException()
     {
-        Name = findViewById(R.id.loginbtnn);
-        Info = findViewById(R.id.passwordlogin);
-        ProductPicture = findViewById(R.id.Emailtextlogin);
+        Name = findViewById(R.id.loginbtn_signup);
+        Info = findViewById(R.id.passsignup);
+        ProductPicture = findViewById(R.id.editTextText2);
         fbs = FirebaseServices.getInstance();
         ProductPicture.setOnClickListener(new View.OnClickListener() {
             @Override

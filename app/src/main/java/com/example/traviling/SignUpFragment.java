@@ -61,8 +61,8 @@ public class SignUpFragment extends Fragment
         super.onStart();
         etUsernameSIGNUP = getView().findViewById(R.id.passsignup);
         fbs=FirebaseServices.getInstance();
-        etPasswordSIGNUP = getView().findViewById(R.id.passwordlogin);
-        btnSignUpSIGNUP = getView().findViewById(R.id.singupbtn);
+        etPasswordSIGNUP = getView().findViewById(R.id.passsignup);
+        btnSignUpSIGNUP = getView().findViewById(R.id.btnStartMain);
         btnSignUpSIGNUP.setOnClickListener(new View.OnClickListener()
         {
             @Override

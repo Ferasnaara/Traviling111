@@ -67,11 +67,11 @@ import com.google.firebase.firestore.DocumentReference;
 
     private void connectComponents() {
         fbs = FirebaseServices.getInstance();
-        etName = getView().findViewById(R.id.passwordlogin);
+        etName = getView().findViewById(R.id.passsignup);
         etDescription = getView().findViewById(R.id.loginbtn_signup);
-        etAddress = getView().findViewById(R.id.loginbtnn);
-        etPhone = getView().findViewById(R.id.passwordlogin);
-        btnAdd = getView().findViewById(R.id.passwordlogin);
+        etAddress = getView().findViewById(R.id.loginbtn_signup);
+        etPhone = getView().findViewById(R.id.passsignup);
+        btnAdd = getView().findViewById(R.id.passsignup);
 
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragments.signupbenefactorfragment">
+    android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -28,7 +27,7 @@
         <EditText
             android:id="@+id/passsignup"
             android:layout_width="235dp"
-            android:layout_height="47dp"
+            android:layout_height="48dp"
             android:layout_marginTop="320dp"
             android:ems="10"
             android:hint="password"
@@ -86,10 +85,10 @@
             android:layout_width="435dp"
             android:layout_height="257dp"
             android:scaleType="fitXY"
-            android:src="@tools:sample/avatars"
             tools:layout_editor_absoluteX="-12dp"
             tools:layout_editor_absoluteY="0dp"
-            tools:src="@drawable/_7bb9361_26c0_46c2_ae61_71e5b4bfd11c" />
+            tools:src="@drawable/_7bb9361_26c0_46c2_ae61_71e5b4bfd11c"
+            tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
