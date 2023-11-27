@@ -9,86 +9,61 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <EditText
-            android:id="@+id/emailsignupbenefactor"
-            android:layout_width="235dp"
-            android:layout_height="50dp"
+            android:id="@+id/etEmailSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="272dp"
             android:ems="10"
-            android:hint="E-mail"
+            android:hint="Email"
             android:inputType="textEmailAddress"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.414"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/passsignup"
-            android:layout_width="235dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="320dp"
+            android:id="@+id/etPasswordSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:ems="10"
-            android:hint="password"
-            android:inputType="numberPassword"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.414"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-            android:id="@+id/confirmpasssignup"
-            android:layout_width="236dp"
-            android:layout_height="48dp"
-            android:layout_marginBottom="316dp"
-            android:ems="10"
-            android:hint="confirm password"
-            android:inputType="numberPassword"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.411"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="@+id/etEmailSignup"
+            app:layout_constraintTop_toBottomOf="@+id/etEmailSignup" />
 
         <Button
-            android:id="@+id/loginbtn_signup"
-            android:layout_width="111dp"
-            android:layout_height="51dp"
-            android:layout_marginStart="72dp"
-            android:layout_marginBottom="64dp"
-            android:backgroundTint="@color/blue"
-            android:text="login"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/btnSignupSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:backgroundTint="#4C784E"
+            android:text="Sign up"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/passsignup"
-            app:layout_constraintVertical_bias="0.254" />
+            app:layout_constraintTop_toBottomOf="@+id/etPasswordSignup" />
 
-        <Button
-            android:id="@+id/finishsignup"
-            android:layout_width="112dp"
-            android:layout_height="56dp"
-            android:layout_marginEnd="80dp"
-            android:layout_marginBottom="248dp"
-            android:backgroundTint="@color/blue"
-            android:text="continue"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+        <ImageButton
+            android:id="@+id/btnBackSignup"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/baseline_arrow_back_24"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="570dp" />
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="435dp"
             android:layout_height="257dp"
             android:scaleType="fitXY"
+            tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="-12dp"
-            tools:layout_editor_absoluteY="0dp"
-            tools:src="@drawable/_7bb9361_26c0_46c2_ae61_71e5b4bfd11c"
-            tools:ignore="MissingConstraints" />
+            tools:layout_editor_absoluteY="-14dp"
+            tools:src="@drawable/_7bb9361_26c0_46c2_ae61_71e5b4bfd11c" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

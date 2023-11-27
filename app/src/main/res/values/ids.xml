@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="etPasswordLogin" type="id" />
+    <item name="btnSignupLogin" type="id" />
+    <item name="btnForgotLogin" type="id" />
+    <item name="etEmailLogin" type="id" />
+    <item name="btnLoginLogin" type="id" />
+</resources>
