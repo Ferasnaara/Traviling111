@@ -27,8 +27,8 @@ public class  ForgotPasswordFragment extends Fragment
 
     private void Reset() {
 
-        etEmailforgot = getView().findViewById(R.id.emailsignupbenefactor);
-        btnForgot = getView().findViewById(R.id.confirmpasssignup);
+        etEmailforgot = getView().findViewById(R.id.etEmailSignup);
+        btnForgot = getView().findViewById(R.id.btnBackSignup);
         mAuth = FirebaseAuth.getInstance();
         btnForgot.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,7 +45,7 @@ public class  ForgotPasswordFragment extends Fragment
                         Toast.makeText(getContext(), "Email Has send" + "", Toast.LENGTH_SHORT).show();
                         LoginFragment LogInFragment=new LoginFragment();
                         FragmentManager manager=getFragmentManager();
-                        manager.beginTransaction().replace(R.id.confirmpasssignup,LogInFragment,LogInFragment.getTag()).commit();
+                        manager.beginTransaction().replace(R.id.btnBackSignup,LogInFragment,LogInFragment.getTag()).commit();
                     }
                 });
             }

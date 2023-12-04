@@ -133,8 +133,8 @@ public class AddProductActivity extends AppCompatActivity {
     @SuppressLint("WrongViewCast")
     public void ConnectException()
     {
-        Name = findViewById(R.id.loginbtn_signup);
-        Info = findViewById(R.id.passsignup);
+        Name = findViewById(R.id.btnBackSignup);
+        Info = findViewById(R.id.btnSignupLogin);
         ProductPicture = findViewById(R.id.editTextText2);
         fbs = FirebaseServices.getInstance();
         ProductPicture.setOnClickListener(new View.OnClickListener() {

@@ -58,9 +58,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            Name=itemView.findViewById(R.id.passsignup);
-            Price=itemView.findViewById(R.id.confirmpasssignup);
-            proPicture=itemView.findViewById(R.id.loginbtn_signup);
+            Name=itemView.findViewById(R.id.btnSignupSignup);
+            Price=itemView.findViewById(R.id.btnBackSignup);
+            proPicture=itemView.findViewById(R.id.btnBackSignup);
         }
     }
 }

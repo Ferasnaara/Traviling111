@@ -60,7 +60,7 @@
 
             <Button
                 android:id="@+id/btnStartMain"
-                android:onClick="gotoSignupFragment"
+                android:onClick="gotoLoginFragment"
                 android:layout_width="match_parent"
                 android:layout_height="62dp"
                 android:text="Let's Get Started"
