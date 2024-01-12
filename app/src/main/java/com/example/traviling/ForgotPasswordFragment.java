@@ -21,14 +21,14 @@ public class  ForgotPasswordFragment extends Fragment
     private static final String ARG_PARAM2 = "param2";
     private String mParam1;
     private String mParam2;
-    private EditText btnForgot;
-    private Button etEmailforgot;
+    private Button btnForgot;
+    private EditText etEmailforgot;
     private FirebaseAuth mAuth;
 
     private void Reset() {
 
         etEmailforgot = getView().findViewById(R.id.etEmailSignup);
-        btnForgot = getView().findViewById(R.id.btnBackSignup);
+        btnForgot = getView().findViewById(R.id.btnSendForgot);
         mAuth = FirebaseAuth.getInstance();
         btnForgot.setOnClickListener(new View.OnClickListener() {
             @Override
