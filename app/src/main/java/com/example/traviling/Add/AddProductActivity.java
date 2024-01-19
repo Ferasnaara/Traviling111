@@ -1,4 +1,4 @@
-package com.example.traviling;
+package com.example.traviling.Add;
 
 import static android.content.ContentValues.TAG;
 
@@ -18,6 +18,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.traviling.FirebaseServices;
+import com.example.traviling.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentReference;

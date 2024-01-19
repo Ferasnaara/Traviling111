@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pages.AddProductFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="@+id/etDescAddProductFragment"
+        app:layout_constraintStart_toEndOf="@+id/etDescAddProductFragment">
+
+        <EditText
+            android:id="@+id/etTittleAddProductFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="230dp"
+            android:ems="10"
+            android:hint="tittle..."
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/ivShowAddProduct"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.472"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etDescAddProductFragment"
+            android:layout_width="204dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="45dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="description..."
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toTopOf="@+id/etAddressAddRestaurantFragment"
+            app:layout_constraintStart_toStartOf="@+id/etTittleAddProductFragment"
+            app:layout_constraintTop_toBottomOf="@+id/etTittleAddProductFragment"
+            tools:ignore="UnknownId" />
+
+        <EditText
+            android:id="@+id/etPriceAddProductFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:ems="10"
+            android:hint="price..."
+            android:inputType="number|numberDecimal"
+            app:layout_constraintStart_toStartOf="@+id/etDescAddProductFragment"
+            app:layout_constraintTop_toBottomOf="@+id/etDescAddProductFragment" />
+
+        <Button
+            android:id="@+id/btnAddAddProductFragment"
+            android:layout_width="161dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="116dp"
+            android:text="Add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivShowAddProduct"
+            android:layout_width="119dp"
+            android:layout_height="141dp"
+            android:layout_marginStart="146dp"
+            android:layout_marginEnd="146dp"
+            android:layout_marginBottom="160dp"
+            android:src="@drawable/_7bb9361_26c0_46c2_ae61_71e5b4bfd11c"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etTittleAddProductFragment" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

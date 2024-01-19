@@ -1,5 +1,6 @@
-package com.example.traviling;
+package com.example.traviling.Add;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,6 +14,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.traviling.FirebaseServices;
+import com.example.traviling.R;
+import com.example.traviling.Traviling;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentReference;
@@ -65,6 +69,7 @@ import com.google.firebase.firestore.DocumentReference;
 
     }
 
+    @SuppressLint("WrongViewCast")
     private void connectComponents() {
         fbs = FirebaseServices.getInstance();
         etName = getView().findViewById(R.id.btnSignupLogin);

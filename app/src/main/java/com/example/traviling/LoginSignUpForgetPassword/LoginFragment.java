@@ -1,5 +1,6 @@
-package com.example.traviling;
+package com.example.traviling.LoginSignUpForgetPassword;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,6 +11,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.traviling.R;
 
 
 public class LoginFragment extends Fragment {
@@ -52,6 +55,7 @@ public class LoginFragment extends Fragment {
         return inflater.inflate(R.layout.activity_main, container, false);
     }
 
+    @SuppressLint("WrongViewCast")
     @Override
     public void onStart() {
         super.onStart();

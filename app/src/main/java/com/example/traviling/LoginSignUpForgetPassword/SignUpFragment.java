@@ -1,16 +1,17 @@
-package com.example.traviling;
+package com.example.traviling.LoginSignUpForgetPassword;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import com.example.traviling.R;
+
 import androidx.fragment.app.Fragment;
 
+import com.example.traviling.FirebaseServices;
+import com.example.traviling.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -52,6 +53,7 @@ public class SignUpFragment extends Fragment
 
 
 
+    @SuppressLint("WrongViewCast")
     @Override
     public void onStart() {
         super.onStart();

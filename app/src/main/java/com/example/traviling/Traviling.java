@@ -28,7 +28,7 @@ public class Traviling {
         return description;
     }
 
-    public void setDescription(String description) {
+    public void setDescription(Traviling description) {
         this.description = description;
     }
 
