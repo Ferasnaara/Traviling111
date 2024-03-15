@@ -1,10 +1,6 @@
 package com.example.traviling.LoginSignUpForgetPassword;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,14 +8,18 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.fragment.app.Fragment;
+
 import com.example.traviling.R;
 
 
 public class LoginFragment extends Fragment {
 
-    private EditText Username, Password;
+    private EditText etUsername, etPassword;
     private Button btnLogin;
-    private TextView ForgotPassword, Signup;
+    private TextView ForgotPassword;
+    private Button btnSignup;
+
 
     private static final String ARG_P1 = "p1";
     private static final String ARG_P2 = "p2";
@@ -55,27 +55,37 @@ public class LoginFragment extends Fragment {
         return inflater.inflate(R.layout.activity_main, container, false);
     }
 
-    @SuppressLint("WrongViewCast")
-    @Override
+
     public void onStart() {
         super.onStart();
 
-        Username = getView().findViewById(R.id.btnSignupLogin);
-        Password = getView().findViewById(R.id.btnSignupLogin);
-        btnLogin = getView().findViewById(R.id.btnBackSignup);
+        init();
+
+
+    }
+
+    private void init() {
+        etUsername = getView().findViewById(R.id.etEmailLogin);
+        etPassword = getView().findViewById(R.id.etPasswordLogin);
+        btnLogin = getView().findViewById(R.id.btnLoginLogin);
         ForgotPassword = getView().findViewById(R.id.btnSignupLogin);
-        Signup = getView().findViewById(R.id.btnSignupLogin);
+        btnSignup = getView().findViewById(R.id.btnSignupLogin);
+
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // TODO: check data is not empty
+                 // if yes check with firebase
+                 // else ask user to enter user/pass
 
             }
         });
         ForgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                // TODO: goto forgot password
             }
         });
-    }}
+    }
+}

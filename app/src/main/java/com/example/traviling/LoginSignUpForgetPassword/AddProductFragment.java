@@ -19,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.traviling.FirebaseServices;
+import com.example.traviling.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentReference;
@@ -81,7 +82,7 @@ public class AddProductFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(ARG_PARAM1.layout.fragment_add_product, container, false);
+        return inflater.inflate(R.layout.add_fragment, container, false);
     }
 
     @Override
@@ -94,12 +95,12 @@ public class AddProductFragment extends Fragment {
 
     private void connectComponents() {
         fbs = FirebaseServices.getInstance();
-        etTittle = getView().findViewById(RecyclerView.Recycler.etTittleAddProductFragment);
-        etDescription = getView().findViewById(RecyclerView.Recycler.etDescAddProductFragment);
-        etPrice = getView().findViewById(RecyclerView.Recycler.etPriceAddProductFragment);
-        rvProducts = getView().findViewById(rvProducts.Recycler.rvProductsProFragment);
-        ivShow = getView().findViewById(rvProducts.Recycler.ivShowAddProduct);
-        btnAdd = getView().findViewById(rvProducts.Recycler.btnAddAddProductFragment);
+        etTittle = getView().findViewById(R.id.etTitleAddProductFragment);
+        etDescription = getView().findViewById(R.id.etDescAddProductFragment);
+        etPrice = getView().findViewById(R.id.etPriceAddProductFragment);
+        etProducts = getView().findViewById(R.id.etDescAddProductFragment);
+        ivShow = getView().findViewById(R.id.ivShowAddProduct);
+        btnAdd = getView().findViewById(R.id.btnAddAddProductFragment);
 
         ivShow.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -124,7 +125,7 @@ public class AddProductFragment extends Fragment {
                     return;
                 }
 
-                Product product = new Product(tittle, description, price, fbs.getSelectedImageURL().toString());
+                Product product = new Product(tittle, description, price, fbs.getStorage().toString());
 
                 fbs.getFire().collection("product").add(product).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                     @Override
@@ -153,7 +154,7 @@ public class AddProductFragment extends Fragment {
         if (requestCode == GALLERY_REQUEST_CODE && resultCode == getActivity().RESULT_OK && data != null) {
             Uri selectedImageUri = data.getData();
             ivShow.setImageURI(selectedImageUri);
-            .uploadImage(getActivity(), selectedImageUri);
+            getLoaderManager();
         }
     }
 }

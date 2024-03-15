@@ -14,13 +14,13 @@
         app:layout_constraintStart_toEndOf="@+id/etDescAddProductFragment">
 
         <EditText
-            android:id="@+id/etTittleAddProductFragment"
+            android:id="@+id/etTitleAddProductFragment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:layout_marginBottom="230dp"
             android:ems="10"
-            android:hint="tittle..."
+            android:hint="title..."
             android:inputType="text"
             app:layout_constraintBottom_toTopOf="@+id/ivShowAddProduct"
             app:layout_constraintEnd_toEndOf="parent"
@@ -39,8 +39,8 @@
             android:hint="description..."
             android:inputType="textMultiLine"
             app:layout_constraintBottom_toTopOf="@+id/etAddressAddRestaurantFragment"
-            app:layout_constraintStart_toStartOf="@+id/etTittleAddProductFragment"
-            app:layout_constraintTop_toBottomOf="@+id/etTittleAddProductFragment"
+            app:layout_constraintStart_toStartOf="@+id/etTitleAddProductFragment"
+            app:layout_constraintTop_toBottomOf="@+id/etTitleAddProductFragment"
             tools:ignore="UnknownId" />
 
         <EditText
@@ -75,7 +75,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etTittleAddProductFragment" />
+            app:layout_constraintTop_toBottomOf="@+id/etTitleAddProductFragment" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

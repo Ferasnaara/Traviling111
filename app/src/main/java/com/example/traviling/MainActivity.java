@@ -17,29 +17,31 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        private void gotoSignpFragment() {
-            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            ft.replace(R.id.frameLayoutMain, new SignUpFragment());
-            ft.commit();
-        }
+        gotoLoginFragment();
+    }
 
-        private void gotoLoginFragment () {
-            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            ft.replace(R.id.frameLayoutMain, new LoginFragment());
-            ft.commit();
-        }
+    private void gotoSignpFragment() {
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.frameLayoutMain, new SignUpFragment());
+        ft.commit();
+    }
 
-        private void gotoForgotPasswordFragment() {
-            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            ft.replace(R.id.frameLayoutMain, new ForgotPasswordFragment());
-            ft.commit();
-        }
+    private void gotoLoginFragment () {
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.frameLayoutMain, new LoginFragment());
+        ft.commit();
+    }
 
-        private void gotoAddCardFragment() {
-            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            ft.replace(R.id.frameLayoutMain, new introFragment());
-            ft.commit();
-        }
+    private void gotoForgotPasswordFragment() {
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.frameLayoutMain, new ForgotPasswordFragment());
+        ft.commit();
+    }
+
+    private void gotoAddCardFragment() {
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.frameLayoutMain, new introFragment());
+        ft.commit();
     }
 }
 

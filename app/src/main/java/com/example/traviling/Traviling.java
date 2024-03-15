@@ -29,7 +29,7 @@ public class Traviling {
     }
 
     public void setDescription(Traviling description) {
-        this.description = description;
+        this.description = String.valueOf(description);
     }
 
     public String getAddress() {
